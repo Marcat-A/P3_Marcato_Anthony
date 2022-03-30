@@ -21,6 +21,24 @@
     font-family: var(--primary-font);
 }
 
+.btn{
+    padding: 1em 1.5em;
+    border-radius: 50px;
+    border: none;
+    background: rgb(255,121,218);
+    background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    color: #fff;
+    font-weight: 400;
+    font-size: .9em;
+    box-shadow: 3px 3px 8px rgba(153, 153, 153, 0.5);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    &:hover{
+        background: linear-gradient(180deg, lighten(rgba(255,121,218,1),2%) 0%, lighten(rgba(147,86,220,1),2%) 100%);
+        box-shadow: 3px 3px 8px rgba(153, 153, 153, 0.9);
+    }
+}
+
 // Loader
 
 .pre-load{
@@ -151,33 +169,78 @@
 }
 
 // Navbar
-
 .navbar{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-block: .5em;
     width: 100%;
-    box-shadow: 0 0 10px #afafaf;
+    box-shadow: 0 0 5px #afafaf;
     &__brand{
         text-transform: lowercase;
         font-family: var(--secondary-font);
         color: black;
-        font-size: 1.5em;
+        font-size: 2em;
     }
 }
 
-.location{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-block: .8em;
-    width: 100%;
-    background-color: #afafaf3d;
-    font-size: .8em;
-    color: #443e3e;
-    font-weight: bold;
-    i{
-        margin-right: 1em;
+// Mainpage 
+
+.mainpage{
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 3.2s linear forwards;
+    display: block;
+    
+    .location{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-block: 1em;
+        width: 100%;
+        background-color: #afafaf4d;
+        font-size: 1em;
+        color: #443e3e;
+        font-weight: bold;
+        i{
+            margin-right: 1em;
+        }
+    }
+
+    .order_menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #afafaf2c;
+        padding: 2em;
+        text-align: center;
+        &--title{
+            font-size: 1.5em;
+            padding-inline: 1em;
+            margin-bottom: .5em;
+            font-weight: 800;
+        }
+        &--secondTitle{
+            font-size: 1em;
+            font-weight: 400;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    90%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
     }
 }
