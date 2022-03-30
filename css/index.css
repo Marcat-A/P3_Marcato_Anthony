@@ -1,7 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+:root {
+  --primary-font: 'Roboto';
+  --secondary-font: 'Shrikhand';
+  --primary-color: #9356DC;
+  --secondary-color: #FF79DA;
+  --tertiary-color:#99E2D0;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+.pre-load {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  background-color: #222;
+  -webkit-animation: load 3s linear forwards;
+          animation: load 3s linear forwards;
+  position: absolute;
+}
+
+.pre-load .loader {
+  position: relative;
+  width: 700px;
+  height: 700px;
+  background-color: #2a2a2a;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pre-load .loader .circle {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border: 2px solid #191919;
+  border-radius: 50%;
+  -webkit-animation: spin 1.5s linear infinite;
+          animation: spin 1.5s linear infinite;
+}
+
+.pre-load .loader .circle.circle2 {
+  width: 500px;
+  height: 500px;
+  -webkit-animation: spin 3s linear infinite;
+          animation: spin 3s linear infinite;
+}
+
+.pre-load .loader .circle.circle2::before {
+  background-color: var(--secondary-color);
+  -webkit-box-shadow: 0 0 20px var(--secondary-color), 0 0 60px var(--secondary-color);
+          box-shadow: 0 0 20px var(--secondary-color), 0 0 60px var(--secondary-color);
+}
+
+.pre-load .loader .circle.circle3 {
+  width: 400px;
+  height: 400px;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+.pre-load .loader .circle.circle3::before {
+  background-color: var(--tertiary-color);
+  -webkit-box-shadow: 0 0 20px var(--tertiary-color), 0 0 60px var(--tertiary-color);
+          box-shadow: 0 0 20px var(--tertiary-color), 0 0 60px var(--tertiary-color);
+}
+
+.pre-load .loader .circle.circle4 {
+  width: 300px;
+  height: 300px;
+  -webkit-animation: spin 1.5s linear infinite;
+          animation: spin 1.5s linear infinite;
+}
+
+.pre-load .loader .circle.circle4::before {
+  background-color: var(--primary-color);
+  -webkit-box-shadow: 0 0 20px var(--primary-color), 0 0 60px var(--primary-color);
+          box-shadow: 0 0 20px var(--primary-color), 0 0 60px var(--primary-color);
+}
+
+.pre-load .loader .circle.circle5 {
+  width: 200px;
+  height: 200px;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+.pre-load .loader .circle.circle5::before {
+  background-color: var(--secondary-color);
+  -webkit-box-shadow: 0 0 20px var(--secondary-color), 0 0 60px var(--secondary-color);
+          box-shadow: 0 0 20px var(--secondary-color), 0 0 60px var(--secondary-color);
+}
+
+.pre-load .loader .circle::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -12px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: var(--primary-color);
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 20px var(--primary-color), 0 0 60px var(--primary-color);
+          box-shadow: 0 0 20px var(--primary-color), 0 0 60px var(--primary-color);
+}
+
+.pre-load .loader .text {
+  background: #383838;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 0 150px #383838,0 0 200px #383838;
+          box-shadow: 0 0 150px #383838,0 0 200px #383838;
+  color: #fff;
+  font-family: var(--secondary-font);
+  font-size: 2em;
+  -webkit-animation: fade 1s linear infinite;
+          animation: fade 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes load {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  90% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    z-index: -99;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes load {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  90% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    z-index: -99;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-block: .5em;
+  width: 100%;
+  -webkit-box-shadow: 0 0 10px #afafaf;
+          box-shadow: 0 0 10px #afafaf;
+}
+
+.navbar__brand {
+  text-transform: lowercase;
+  font-family: var(--secondary-font);
+  color: black;
+  font-size: 1.5em;
+}
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-block: .8em;
+  width: 100%;
+  background-color: #afafaf3d;
+  font-size: .8em;
+  color: #443e3e;
+  font-weight: bold;
+}
+
+.location i {
+  margin-right: 1em;
 }
 /*# sourceMappingURL=index.css.map */
