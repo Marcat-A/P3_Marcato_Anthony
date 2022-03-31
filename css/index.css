@@ -61,6 +61,7 @@ a {
   -webkit-animation: load 3s linear forwards;
           animation: load 3s linear forwards;
   position: absolute;
+  overflow-x: hidden;
 }
 
 .pre-load .loader {
@@ -273,6 +274,45 @@ a {
   font-family: var(--secondary-font);
   color: black;
   font-size: 2em;
+}
+
+.footer {
+  width: 100%;
+  background-color: #383838;
+  padding: 1.5em;
+  color: #dddddd;
+}
+
+.footer--title {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: lighter;
+  margin-bottom: 1em;
+}
+
+.footer__links {
+  display: block;
+}
+
+.footer__link {
+  margin-bottom: .5em;
+  color: #dddddd;
+  font-size: .9em;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: block;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.footer__link:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.footer__link i {
+  margin-right: .5em;
+  font-size: .8em;
 }
 
 .mainpage {
