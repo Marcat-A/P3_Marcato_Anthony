@@ -456,3 +456,59 @@ a{
         opacity: 1;
     }
 }
+
+//Media Queries
+
+@media screen and (min-width:380px ) {
+    .mainpage{
+        .restaurants{
+            .card{
+                &.new{
+                    &::before{
+                        left: 85%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:800px ) {
+    .mainpage{
+        .steps{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            &--title{
+                display: flex;
+                width: 100%;
+            }
+            .step{
+                display: inline-block;
+                width: 30%;
+                text-align: center;
+                margin-inline: auto;
+                padding-inline: 1em;
+            }
+        }
+        .restaurants{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            &--title{
+                display: flex;
+                width: 100%;
+            }
+            .card{
+                width: 45%;
+                margin-bottom: 3em;
+                margin-inline: auto;
+                &.new{
+                    &::before{
+                        left: 75%;
+                    }
+                }
+            }
+        }
+    }
+}
