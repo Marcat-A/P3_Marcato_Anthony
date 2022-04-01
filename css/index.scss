@@ -494,6 +494,18 @@ a{
         margin-top: 195px;
         padding: 2em 1em;
         background-color: #dddddd;
+        &__order{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .btn{
+                padding-inline: 3em;
+                margin-bottom: 1em;
+                &:hover{
+                    background: linear-gradient(180deg, darken(rgba(255,121,218,1),2%) 0%, darken(rgba(147,86,220,1),2%) 100%);
+                }
+            }
+        }
         &__entree, &__plats, &__desserts{
             margin-bottom: 1em;
         }

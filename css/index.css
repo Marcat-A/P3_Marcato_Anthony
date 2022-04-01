@@ -678,6 +678,28 @@ a {
   background-color: #dddddd;
 }
 
+.secondPage .menu__order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.secondPage .menu__order .btn {
+  padding-inline: 3em;
+  margin-bottom: 1em;
+}
+
+.secondPage .menu__order .btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff6fd7), to(#8e4eda));
+  background: linear-gradient(180deg, #ff6fd7 0%, #8e4eda 100%);
+}
+
 .secondPage .menu__entree, .secondPage .menu__plats, .secondPage .menu__desserts {
   margin-bottom: 1em;
 }
