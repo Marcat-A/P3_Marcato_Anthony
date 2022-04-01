@@ -637,6 +637,264 @@ a {
   }
 }
 
+.secondPage .navbar {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.secondPage .navbar i {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-size: 1.2em;
+  color: #383838;
+}
+
+.secondPage .background-image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  max-height: 350px;
+}
+
+.secondPage .background-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.secondPage .menu {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 9;
+  display: block;
+  border-radius: 50px 50px 0 0;
+  margin-top: 195px;
+  padding: 2em 1em;
+  background-color: #dddddd;
+}
+
+.secondPage .menu__entree, .secondPage .menu__plats, .secondPage .menu__desserts {
+  margin-bottom: 1em;
+}
+
+.secondPage .menu__flexTitle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2em;
+}
+
+.secondPage .menu__flexTitle--title {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 1.8em;
+  padding-top: .2em;
+}
+
+.secondPage .menu__flexTitle--like {
+  font-size: 1.5em;
+  position: relative;
+}
+
+.secondPage .menu__flexTitle--like .fa-heart.empty {
+  color: black;
+}
+
+.secondPage .menu__flexTitle--like .fa-heart.full {
+  opacity: 0;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  background: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.secondPage .menu__flexTitle--like .fa-heart.full:hover {
+  -webkit-animation: fill .2s linear forwards;
+          animation: fill .2s linear forwards;
+}
+
+.secondPage .menu__subTitle {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.1em;
+  position: relative;
+  padding-bottom: .2em;
+  margin-bottom: 1em;
+}
+
+.secondPage .menu__subTitle::after {
+  content: "";
+  position: absolute;
+  background-color: #5dd1b5;
+  width: 45px;
+  height: 3px;
+  top: 100%;
+  left: 0;
+}
+
+.secondPage .menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.secondPage .menu__text {
+  width: 86%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.secondPage .menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: 0 0 10px #afafaf;
+          box-shadow: 0 0 10px #afafaf;
+  border-radius: 10px;
+  background-color: #ebebeb;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: relative;
+  padding: .5em 1em;
+  margin-bottom: 1em;
+}
+
+.secondPage .menu__item--title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: .2em;
+  font-size: 1.1em;
+}
+
+.secondPage .menu__item--info {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: .9em;
+}
+
+.secondPage .menu__item:hover .menu__checked {
+  right: 50px;
+}
+
+.secondPage .menu__item:hover .menu__checked i {
+  -webkit-animation: rotate .3s linear forwards;
+          animation: rotate .3s linear forwards;
+}
+
+.secondPage .menu__item:hover .menu__text {
+  width: 70%;
+  margin-right: .5em;
+}
+
+.secondPage .menu__item:hover .menu__price {
+  width: auto;
+}
+
+.secondPage .menu__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 50px;
+}
+
+.secondPage .menu__checked {
+  position: absolute;
+  background-color: var(--tertiary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  right: 0;
+  min-height: 100%;
+  width: 10%;
+  min-width: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.secondPage .menu__checked i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  line-height: 20px;
+  font-size: .9em;
+  width: 20px;
+  height: 20px;
+  color: var(--tertiary-color);
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 @media screen and (min-width: 380px) {
   .mainpage .restaurants .card.new::before {
     left: 85%;
