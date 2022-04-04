@@ -939,6 +939,10 @@ a {
   font-size: 1.1em;
 }
 
+.secondPage .menu__item--title.wrap {
+  white-space: normal;
+}
+
 .secondPage .menu__item--info {
   overflow: hidden;
   white-space: nowrap;
