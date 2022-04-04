@@ -557,7 +557,7 @@ a{
             margin-bottom: 1em;
             transform: translateX(120%);
             opacity: 0;
-            visibility: none;
+            visibility: hidden;
             animation: slideToLeft 1s linear forwards;
             &.delay1{
                 animation-delay: 0s;
@@ -600,7 +600,7 @@ a{
             margin-bottom: 1em;
             transform: translateY(100%);
             opacity: 0;
-            visibility: none;
+            visibility: hidden;
             animation: slideToBottom .5s linear forwards;
             &.delay1{
                 animation-delay: 1s;
@@ -743,7 +743,7 @@ a{
 @keyframes slideToLeft{
     0%{
         opacity: 0;
-        visibility: none;
+        visibility: hidden;
         transform: translateX(120%);
     }
     100%{
@@ -756,7 +756,7 @@ a{
 @keyframes slideToBottom{
     0%{
         opacity: 0;
-        visibility: none;
+        visibility: hidden;
         transform: translateY(100%);
     }
     100%{

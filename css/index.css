@@ -766,7 +766,7 @@ a {
   -webkit-transform: translateX(120%);
           transform: translateX(120%);
   opacity: 0;
-  visibility: none;
+  visibility: hidden;
   -webkit-animation: slideToLeft 1s linear forwards;
           animation: slideToLeft 1s linear forwards;
 }
@@ -831,7 +831,7 @@ a {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   opacity: 0;
-  visibility: none;
+  visibility: hidden;
   -webkit-animation: slideToBottom .5s linear forwards;
           animation: slideToBottom .5s linear forwards;
 }
@@ -1050,7 +1050,7 @@ a {
 @-webkit-keyframes slideToLeft {
   0% {
     opacity: 0;
-    visibility: none;
+    visibility: hidden;
     -webkit-transform: translateX(120%);
             transform: translateX(120%);
   }
@@ -1065,7 +1065,7 @@ a {
 @keyframes slideToLeft {
   0% {
     opacity: 0;
-    visibility: none;
+    visibility: hidden;
     -webkit-transform: translateX(120%);
             transform: translateX(120%);
   }
@@ -1080,7 +1080,7 @@ a {
 @-webkit-keyframes slideToBottom {
   0% {
     opacity: 0;
-    visibility: none;
+    visibility: hidden;
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
   }
@@ -1095,7 +1095,7 @@ a {
 @keyframes slideToBottom {
   0% {
     opacity: 0;
-    visibility: none;
+    visibility: hidden;
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
   }
