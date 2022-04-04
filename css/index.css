@@ -637,6 +637,10 @@ a {
   }
 }
 
+.secondPage {
+  overflow-x: hidden;
+}
+
 .secondPage .navbar {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -759,6 +763,27 @@ a {
   position: relative;
   padding-bottom: .2em;
   margin-bottom: 1em;
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
+  opacity: 0;
+  visibility: none;
+  -webkit-animation: slideToLeft 1s linear forwards;
+          animation: slideToLeft 1s linear forwards;
+}
+
+.secondPage .menu__subTitle.delay1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.secondPage .menu__subTitle.delay2 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.secondPage .menu__subTitle.delay3 {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 .secondPage .menu__subTitle::after {
@@ -803,6 +828,57 @@ a {
   position: relative;
   padding: .5em 1em;
   margin-bottom: 1em;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+  visibility: none;
+  -webkit-animation: slideToBottom .5s linear forwards;
+          animation: slideToBottom .5s linear forwards;
+}
+
+.secondPage .menu__item.delay1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.secondPage .menu__item.delay2 {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.secondPage .menu__item.delay3 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.secondPage .menu__item.delay4 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.secondPage .menu__item.delay5 {
+  -webkit-animation-delay: 3.25s;
+          animation-delay: 3.25s;
+}
+
+.secondPage .menu__item.delay6 {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+.secondPage .menu__item.delay7 {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.secondPage .menu__item.delay8 {
+  -webkit-animation-delay: 5.25s;
+          animation-delay: 5.25s;
+}
+
+.secondPage .menu__item.delay9 {
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
 }
 
 .secondPage .menu__item--title {
@@ -914,6 +990,66 @@ a {
   100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes slideToLeft {
+  0% {
+    opacity: 0;
+    visibility: none;
+    -webkit-transform: translateX(120%);
+            transform: translateX(120%);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideToLeft {
+  0% {
+    opacity: 0;
+    visibility: none;
+    -webkit-transform: translateX(120%);
+            transform: translateX(120%);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideToBottom {
+  0% {
+    opacity: 0;
+    visibility: none;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideToBottom {
+  0% {
+    opacity: 0;
+    visibility: none;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 

@@ -461,6 +461,7 @@ a{
 // Second Page
 
 .secondPage{
+    overflow-x: hidden;
     .navbar{
         box-shadow: none;
         i{
@@ -554,6 +555,19 @@ a{
             position: relative;
             padding-bottom: .2em;
             margin-bottom: 1em;
+            transform: translateX(120%);
+            opacity: 0;
+            visibility: none;
+            animation: slideToLeft 1s linear forwards;
+            &.delay1{
+                animation-delay: 0s;
+            }
+            &.delay2{
+                animation-delay: 2s;
+            }
+            &.delay3{
+                animation-delay: 4s;
+            }
             &::after{
                 content: "";
                 position: absolute;
@@ -584,6 +598,37 @@ a{
             position: relative;
             padding: .5em 1em;
             margin-bottom: 1em;
+            transform: translateY(100%);
+            opacity: 0;
+            visibility: none;
+            animation: slideToBottom .5s linear forwards;
+            &.delay1{
+                animation-delay: 1s;
+            }
+            &.delay2{
+                animation-delay: 1.25s;
+            }
+            &.delay3{
+                animation-delay: 1.5s;
+            }
+            &.delay4{
+                animation-delay: 3s;
+            }
+            &.delay5{
+                animation-delay: 3.25s;
+            }
+            &.delay6{
+                animation-delay: 3.5s;
+            }
+            &.delay7{
+                animation-delay: 5s;
+            }
+            &.delay8{
+                animation-delay: 5.25s;
+            }
+            &.delay9{
+                animation-delay: 5.5s;
+            }
             &--title{
                 overflow: hidden;
             white-space: nowrap;
@@ -659,6 +704,32 @@ a{
     }
     100%{
         transform: rotate(0deg);
+    }
+}
+
+@keyframes slideToLeft{
+    0%{
+        opacity: 0;
+        visibility: none;
+        transform: translateX(120%);
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideToBottom{
+    0%{
+        opacity: 0;
+        visibility: none;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
     }
 }
 
