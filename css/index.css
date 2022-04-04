@@ -658,7 +658,7 @@ a {
   display: block;
   position: absolute;
   width: 100%;
-  max-height: 350px;
+  height: 240px;
 }
 
 .secondPage .background-image img {
@@ -877,6 +877,56 @@ a {
 }
 
 .secondPage .menu__item.delay9 {
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+}
+
+.secondPage .menu__item.transition1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.secondPage .menu__item.transition2 {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.secondPage .menu__item.transition3 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.secondPage .menu__item.transition4 {
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
+
+.secondPage .menu__item.transition5 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.secondPage .menu__item.transition6 {
+  -webkit-animation-delay: 3.25s;
+          animation-delay: 3.25s;
+}
+
+.secondPage .menu__item.transition7 {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+.secondPage .menu__item.transition8 {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.secondPage .menu__item.transition9 {
+  -webkit-animation-delay: 5.25s;
+          animation-delay: 5.25s;
+}
+
+.secondPage .menu__item.transition10 {
   -webkit-animation-delay: 5.5s;
           animation-delay: 5.5s;
 }
