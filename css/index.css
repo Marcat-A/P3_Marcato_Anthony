@@ -341,8 +341,39 @@ a {
   font-weight: bold;
 }
 
+.mainpage .location--input {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  width: 150px;
+}
+
+.mainpage .location--input::-webkit-input-placeholder {
+  color: #443e3e;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mainpage .location--input:-ms-input-placeholder {
+  color: #443e3e;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mainpage .location--input::-ms-input-placeholder {
+  color: #443e3e;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mainpage .location--input::placeholder {
+  color: #443e3e;
+  font-weight: bold;
+  text-align: center;
+}
+
 .mainpage .location i {
-  margin-right: 1em;
+  text-align: center;
 }
 
 .mainpage .order_menu {

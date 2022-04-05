@@ -241,8 +241,19 @@ a{
         font-size: 1em;
         color: #443e3e;
         font-weight: bold;
+        &--input{
+            background-color: transparent;
+            border: none;
+            font-size: 1em;
+            width: 150px;
+            &::placeholder{
+                color: #443e3e;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
         i{
-            margin-right: 1em;
+            text-align: center;
         }
     }
 
