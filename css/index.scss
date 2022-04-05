@@ -357,7 +357,7 @@ a{
                     background-color: var(--tertiary-color);
                     position: absolute;
                     top: 5%;
-                    left: 70%;
+                    right: 5%;
                     z-index: 3;
                     padding: .5em 1em;
                     font-size: .9em;
@@ -708,8 +708,7 @@ a{
             top: 0;
             right: 0;
             min-height: 100%;
-            width: 10%;
-            min-width: 50px;
+            width: 50px;
             justify-content: center;
             align-items: center;
             transform: translateX(100%);
@@ -774,9 +773,23 @@ a{
             .card{
                 &.new{
                     &::before{
-                        left: 85%;
+                        right: 5%;
                     }
                 }
+            }
+        }
+    }
+    .secondPage{
+        .menu{
+            &__item{
+                &:hover{
+                    .menu__checked{
+                        right: 10%;
+                    }
+                }
+            }
+            &__checked{
+                width: 10%;
             }
         }
     }
@@ -814,7 +827,7 @@ a{
                 margin-inline: auto;
                 &.new{
                     &::before{
-                        left: 75%;
+                        right: 5%;
                     }
                 }
             }
@@ -838,6 +851,9 @@ a{
             &__item{
                 max-width: 80%;
             }
+            &__price{
+                align-self: center;
+            }
         }
     }
 }
@@ -850,6 +866,14 @@ a{
             &__flexTitle{
                 display: flex;
                 flex-direction: column;
+                &--title{
+                    font-size: 2em;
+                    margin-bottom: .5em;
+                }
+                &--like{
+                    font-size: 2em;
+                    margin-bottom: .5em;
+                }
             }
             &__subTitle{
                 margin-bottom: 2em;
