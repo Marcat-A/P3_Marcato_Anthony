@@ -61,7 +61,7 @@ a {
   -webkit-animation: load 3s linear forwards;
           animation: load 3s linear forwards;
   position: absolute;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .pre-load .loader {
