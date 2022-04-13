@@ -60,8 +60,10 @@ a {
   background-color: #222;
   -webkit-animation: load 3s linear forwards;
           animation: load 3s linear forwards;
-  position: absolute;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .pre-load .loader {
@@ -281,6 +283,11 @@ a {
   background-color: #383838;
   padding: 1.5em;
   color: #dddddd;
+}
+
+.footer__mainpage {
+  -webkit-animation: fadeIn 3.2s linear forwards;
+          animation: fadeIn 3.2s linear forwards;
 }
 
 .footer--title {
